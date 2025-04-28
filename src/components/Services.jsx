@@ -41,7 +41,7 @@ const Services = () => {
   ];
 
   return (
-    <section className="mt-16 animate-fadeIn">
+    <section id="services" className="mt-16 animate-fadeIn">
       <div>
         <div className="flex md:gap-[20px] md:p-[30px] p-[20px]">
           <div>
@@ -67,7 +67,7 @@ const Services = () => {
                 >
                   <div>
                     <i
-                      className={`bg-white p-3 rounded-full flex justify-center items-center ${service.icon}`}
+                      className={`bg-white p-2 md:p-3 rounded-full flex justify-center items-center ${service.icon}`}
                     ></i>
                   </div>
                   <h4 className="font-semibold text-[rgb(167,98,19)]">

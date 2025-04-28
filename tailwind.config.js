@@ -1,18 +1,20 @@
 // tailwind.config.js
-module.exports = {
-    theme: {
-      extend: {
-        keyframes: {
-          fadeIn: {
-            '0%': { opacity: '0' },
-            '100%': { opacity: '1' },
-          },
-        },
-        animation: {
-          fadeIn: 'fadeIn 1.5s ease-out',
-        },
+export const theme = {
+  extend: {
+    keyframes: {
+      typing: {
+        "0%": { width: "0" },
+        "100%": { width: "100%" },
+      },
+      blink: {
+        "50%": { borderColor: "transparent" },
+        "100%": { borderColor: "black" },
       },
     },
-    plugins: [],
-  }
-  
+    animation: {
+      typing: "typing 3s steps(20) infinite alternate",
+      blink: "blink 0.7s step-end infinite",
+    },
+  },
+};
+export const plugins = [];

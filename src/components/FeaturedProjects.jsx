@@ -19,7 +19,7 @@ const FeaturedProjects = () => {
     },
   ];
   return (
-    <section className="mt-16">
+    <section className="mt-16" id="projects">
       <div>
         <div className="flex flex-col justify-center items-center space-y-4">
           <h1 className="text-2xl font-semibold">Featured Projects</h1>

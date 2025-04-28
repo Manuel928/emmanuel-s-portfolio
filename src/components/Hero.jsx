@@ -6,7 +6,7 @@ const Hero = () => {
       <div className="order-2 w-3/4 md:order-1 flex flex-col items-center md:items-start space-y-6 md:space-y-7">
         <h1 className="text-3xl leading-relaxed md:text-5xl text-center md:text-left">
           Welcome To My <br />
-          <code className="typewriter text-4xl md:text-7xl tracking-tight">
+          <code className="typewriter text-4xl md:text-7xl tracking-tight font-medium">
             Digital Space
           </code>
         </h1>

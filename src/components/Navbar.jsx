@@ -3,7 +3,9 @@ import React from "react";
 const Navbar = () => {
   return (
     <nav className="flex sticky top-0 z-50 backdrop-blur-md bg-[rgba(245,239,232,0.3)] justify-between items-center border-b p-6 md:p-8">
-      <div>ML.</div>
+      <a href="#">
+        <div>ML.</div>
+      </a>
       <ul className="flex gap-5 text-sm md:text-[16px]">
         <li>
           <a href="#services">About</a>
