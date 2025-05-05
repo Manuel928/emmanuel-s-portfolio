@@ -68,7 +68,7 @@ function Skill({ skill }) {
     <>
       <div className="flex flex-col items-center justify-center h-full p-[20px] gap-[5px] border rounded-lg shadow-md hover:-translate-y-1 hover:shadow-lg duration-500">
         <div>
-          <img src={`./images/${skill.logo}`} className="w-24 h-12" alt="" srcset="" />
+          <img src={`./images/${skill.logo}`} className="w-18 h-6 md:w-24 md:h-12" alt="" srcset="" />
         </div>
         <h4 className="font-semibold text-sm text-center text-black">
           {skill.name}

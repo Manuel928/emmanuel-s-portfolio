@@ -9,12 +9,12 @@ const Projects = () => {
     },
     {
       image: "metics.webp",
-      name: "Fast Turnaround Time",
+      name: "Metics Fashion",
       link: "https://metics.io",
     },
     {
       image: "cloth.avif",
-      name: "Creative & Modern Solutions",
+      name: "DevynTech",
       link: "https://modern.solutions",
     },
   ];
