@@ -1,12 +1,9 @@
 import React from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-import Services from "./components/Services";
-import WhyUs from "./components/WhyUs";
-import OurProcess from "./components/OurProcess";
+import Skills from "./components/Skills";
+import Projects from "./components/Projects";
 import AnyQuestions from "./components/AnyQuestions";
-import FeaturedProjects from "./components/FeaturedProjects";
-import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
@@ -15,12 +12,9 @@ const App = () => {
     <div>
       <Navbar />
       <Hero />
-      <Services />
-      <WhyUs />
-      <OurProcess />
+      <Skills />
+      <Projects />
       <AnyQuestions />
-      <FeaturedProjects />
-      <Testimonials />
       <Contact />
       <Footer />
     </div>

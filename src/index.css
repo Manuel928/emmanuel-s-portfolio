@@ -9,3 +9,22 @@
 * {
   font-family: "Plus Jakarta Sans";
 }
+@keyframes typing {
+  0% { width: 0 }
+  50% { width: 100% }
+  100% { width: 0 }
+}
+
+@keyframes blink {
+  50% { border-color: transparent }
+}
+
+.typewriter {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid;
+  width: 0;
+  animation: typing 4s steps(13) infinite, blink 0.7s step-end infinite;
+  max-width: max-content; /* ensures it doesn't stretch */
+}

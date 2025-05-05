@@ -1,5 +1,10 @@
 # React + Vite
 
+# Style guide
+- Orange 500: hsl(20, 100%, 50%)
+- Dark Blue: hsl(240,93%,3%)
+- Darker Orange: hsl(0, 100%, 22.5%)
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:

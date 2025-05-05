@@ -5,10 +5,10 @@ const Contact = () => {
     <section className="mt-16" id="contact">
       <div className="py-8 lg:py-16 px-4 mx-auto max-w-sm md:max-w-screen-md">
         <h2 className="mb-4 text-2xl md:text-4xl tracking-tight font-extrabold text-center text-black">
-          Contact Us
+          Contact Me
         </h2>
         <p className="mb-8 lg:mb-16 font-light text-center text-sm md:text-md">
-          Got a new project in mind? Send us a message today. Let's get you
+          Got a new project in mind? Send me a message today. Let's get
           started
         </p>
         <form action="#" className="space-y-8">
