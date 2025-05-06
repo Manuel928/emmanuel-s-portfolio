@@ -10,10 +10,10 @@ const AnyQuestions = () => {
           </h2>
           <p className="text-sm">Feel free to reach out to me</p>
           <a
-            href="#"
-            className="text-sm bg-black text-white px-4 py-3 hover:bg-white hover:text-black hover:border duration-500 rounded-bl-3xl rounded-tr-3xl"
+            href="#contact"
+            className="text-sm dark:bg-[hsl(240,93%,3%)] bg-black text-white px-4 py-3 hover:border duration-500 rounded-bl-3xl rounded-tr-3xl"
           >
-            Ask your questions
+            Fill the form below 👇
           </a>
         </div>
       </div>

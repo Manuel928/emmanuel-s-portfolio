@@ -6,6 +6,8 @@
   --font-plusJakarta: "Plus Jakarta Sans", sans-serif;
 }
 
+@config "../tailwind.config.js";
+
 * {
   font-family: "Plus Jakarta Sans";
 }
@@ -26,5 +28,5 @@
   border-right: 2px solid;
   width: 0;
   animation: typing 4s steps(13) infinite, blink 0.7s step-end infinite;
-  max-width: max-content; /* ensures it doesn't stretch */
+  max-width: max-content;
 }

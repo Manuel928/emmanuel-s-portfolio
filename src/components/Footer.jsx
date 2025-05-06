@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer class="h-96 mt-16">
+    <footer class="h-96 mt-16 dark:text-white">
       <div class="flex flex-col px-[40px]">
         <div class="text-3xl font-semibold">ML.</div>
 
@@ -33,11 +33,6 @@ const Footer = () => {
               </a>
             </div>
             <div class="text-sm">
-              <a href="#" class="hover:border-b-2 pb-2 duration-200">
-                Vlog
-              </a>
-            </div>
-            <div class="text-sm">
               <a href="#projects" class="hover:border-b-2 pb-2 duration-200">
                 Projects
               </a>
@@ -50,10 +45,19 @@ const Footer = () => {
           </div>
           <div>
             <div class="flex items-center space-x-3 mt-4">
-              <h3 class="text-sm">Follow</h3>
-              <i class="fa-brands fa-facebook"></i>
-              <i class="fa-brands fa-instagram"></i>
-              <i class="fa-brands fa-x-twitter"></i>
+              <h3 class="text-sm">Follow me</h3>
+              <a href="">
+                <i className="fa-brands fa-facebook"></i>
+              </a>
+              <a href="">
+                <i className="fa-brands fa-instagram"></i>
+              </a>
+              <a href="https://github.com/Manuel928">
+                <i class="fa fa-github" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i className="fa-brands fa-x-twitter"></i>
+              </a>
             </div>
           </div>
         </div>
