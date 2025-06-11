@@ -15,16 +15,16 @@ const Skills = () => {
       name: "Tailwind CSS",
     },
     {
-      logo: "nodejs.svg",
-      name: "Node JS",
+      logo: "wordpress-icon.svg",
+      name: "Wordpress",
     },
     {
       logo: "framer-motion.svg",
       name: "Framer Motion",
     },
     {
-      logo: "firebase-1.svg",
-      name: "Firebase",
+      logo: "figma-icon.svg",
+      name: "Figma",
     },
   ];
 
@@ -52,7 +52,7 @@ const Skills = () => {
               ...Tools of My Craft
             </h3>
             <div className="bg-blue-400 h-1 w-30 lg:hidden"></div>
-            <div className="bg-blue-400 h-1 w-32 hidden lg:block"></div>
+            <div className="bg-blue-400 h-1 w-70 hidden lg:block"></div>
           </div>
 
           <div className="grid grid-cols-3 justify-center items-center gap-5 lg:gap-8">
@@ -69,7 +69,7 @@ const Skills = () => {
 function Skill({ skill }) {
   return (
     <>
-      <div className="flex flex-col items-center justify-center h-full p-[20px] gap-[5px] border dark:border-white rounded-lg shadow-md hover:-translate-y-1 hover:shadow-lg duration-500">
+      <div className="flex flex-col items-center justify-center h-[80px] lg:h-[110px] p-[10px] lg:p-[20px] gap-[5px] border dark:border-white rounded-lg shadow-md hover:-translate-y-1 hover:shadow-lg duration-500">
         <div>
           <img
             src={`./images/${skill.logo}`}

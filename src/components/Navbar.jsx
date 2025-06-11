@@ -25,12 +25,12 @@ const Navbar = () => {
         <div className="bg-white/70 flex items-center justify-center p-1 cursor-pointer rounded-full" onClick={handleThemeToggle}>
           <img
             src="./images/darkmode.svg"
-            className="w-5 h-5 lg:w-7 lg:h-7 dark:hidden"
+            className="w-4 h-4 lg:w-5 lg:h-5 dark:hidden"
             alt="Enable Dark Mode"
           />
           <img
             src="./images/lightmode.svg"
-            className="w-5 h-5 lg:w-7 lg:h-7 hidden dark:block"
+            className="w-4 h-4 lg:w-5 lg:h-5 hidden dark:block"
             alt="Enable Light Mode"
           />
         </div>

@@ -1,4 +1,4 @@
-import React from "react";
+import { ReactTyped } from "react-typed";
 
 const Hero = () => {
   return (
@@ -6,9 +6,14 @@ const Hero = () => {
       <div className="order-2 w-3/4 md:order-1 flex flex-col items-center md:items-start space-y-6 md:space-y-7">
         <h1 className="text-3xl dark:text-white leading-relaxed md:text-5xl text-center md:text-left">
           Welcome To My <br />
-          <code className="typewriter text-blue-400 text-4xl md:text-7xl tracking-tight font-medium">
-            Digital Space
-          </code>
+          <ReactTyped
+            className="text-blue-400 text-4xl md:text-7xl tracking-tight font-medium"
+            strings={["Digital Space", "World", "Journey"]}
+            typeSpeed={40}
+            backSpeed={50}
+            attr=""
+            loop
+          ></ReactTyped>
         </h1>
         <p className="text-sm text-center dark:text-white md:text-left md:text-lg max-w-md">
           Where creativity meets code, and ideas come to life. Glad to have you
@@ -28,13 +33,13 @@ const Hero = () => {
           <a href="">
             <i className="fa-brands fa-facebook"></i>
           </a>
-          <a href="">
+          <a href="https://www.instagram.com/devyn_studios/">
             <i className="fa-brands fa-instagram"></i>
           </a>
           <a href="https://github.com/Manuel928">
             <i class="fa fa-github" aria-hidden="true"></i>
           </a>
-          <a href="">
+          <a href="https://x.com/nuel_flow">
             <i className="fa-brands fa-x-twitter"></i>
           </a>
         </div>
