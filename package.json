@@ -10,9 +10,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "@supabase/supabase-js": "^2.57.4",
     "@tailwindcss/vite": "^4.1.4",
+    "lucide-react": "^0.544.0",
+    "motion": "^12.17.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-router-dom": "^7.9.1",
     "react-typed": "^2.0.12"
   },
   "devDependencies": {

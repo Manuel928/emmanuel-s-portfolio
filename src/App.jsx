@@ -1,22 +1,16 @@
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import Skills from "./components/Skills";
-import Projects from "./components/Projects";
-import AnyQuestions from "./components/AnyQuestions";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
+import { Routes, Route } from "react-router-dom";
+import MainLayout from "./layouts/MainLayout";
+import Home from "./Page/Home";
+import ProjectDetails from "./Page/ProjectDetails";
 
 const App = () => {
   return (
-    <div>
-      <Navbar />
-      <Hero />
-      <Skills />
-      <Projects />
-      <AnyQuestions />
-      <Contact />
-      <Footer />
-    </div>
+    <Routes>
+      <Route path="/" element={<MainLayout />}>
+        <Route index element={<Home />} />
+        <Route path="/project/:id" element={<ProjectDetails />} />
+      </Route>
+    </Routes>
   );
 };
 

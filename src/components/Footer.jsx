@@ -3,9 +3,8 @@ import React from "react";
 const Footer = () => {
   return (
     <footer class="h-96 mt-16 dark:text-white">
-      <div class="flex flex-col px-[40px]">
-        <div class="text-3xl font-semibold">ML.</div>
-
+      <div class="flex flex-col px-6 md:px-8">
+        <code className="font-bold text-xl">{"<Manuel/>"}</code>
         <div class="grid md:grid-cols-3 items-center gap-4 my-12">
           <div class="flex flex-col gap-4">
             <div class="text-sm">

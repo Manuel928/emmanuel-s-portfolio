@@ -1,14 +1,24 @@
 import { ReactTyped } from "react-typed";
+import { motion } from "motion/react";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col bg-white dark:bg-[hsl(240,93%,3%)] gap-6 justify-between items-center px-8 py-4 md:flex-row md:h-[600px]">
+    <motion.div
+      initial={{
+        opacity: 0,
+        y: 100,
+      }}
+      transition={{ duration: 1.5 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      className="flex flex-col bg-white dark:bg-[hsl(240,93%,3%)] gap-6 justify-between items-center px-8 py-4 md:flex-row md:h-[600px]"
+    >
       <div className="order-2 w-3/4 md:order-1 flex flex-col items-center md:items-start space-y-6 md:space-y-7">
-        <h1 className="text-3xl dark:text-white leading-relaxed md:text-5xl text-center md:text-left">
+        <h1 className="text-3xl dark:text-white leading-relaxed md:text-4xl lg:text-5xl text-center md:text-left">
           Welcome To My <br />
           <ReactTyped
-            className="text-blue-400 text-4xl md:text-7xl tracking-tight font-medium"
-            strings={["Digital Space", "World", "Journey"]}
+            className="text-blue-400 text-4xl md:text-5xl lg:text-7xl tracking-tight font-medium"
+            strings={["Digital Space"]}
             typeSpeed={40}
             backSpeed={50}
             attr=""
@@ -44,16 +54,15 @@ const Hero = () => {
           </a>
         </div>
       </div>
-
       {/* <!-- <img className="rounded-full w-72 border-3 bg-gradient-to-r from-purple-400 to-purple-700 md:w-[700px]" src="./images/emmanuel.jpg" alt="" srcset=""> --> */}
-      <div className="p-1 order-1 md:order-2 rounded-full bg-gradient-to-r from-blue-300 to-blue-400 w-72 md:w-[700px]">
+      <div className="p-1.5 order-1 animate-pulse md:order-2 rotate-3 rounded-bl-[190px] rounded-tr-[190px] rounded-br-[90px] rounded-tl-[90px] lg:rounded-bl-[300px] lg:rounded-tr-[300px] lg:rounded-br-[170px] lg:rounded-tl-[170px] bg-gradient-to-r from-blue-400 to-blue-700 w-72 md:w-[700px]">
         <img
           className="rounded-full w-full h-full object-cover"
           src="./images/emmanuel.jpg"
           alt=""
         />
       </div>
-    </div>
+    </motion.div>
   );
 };
 

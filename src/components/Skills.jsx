@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "motion/react";
 
 const Skills = () => {
   const skills = [
@@ -55,11 +56,19 @@ const Skills = () => {
             <div className="bg-blue-400 h-1 w-70 hidden lg:block"></div>
           </div>
 
-          <div className="grid grid-cols-3 justify-center items-center gap-5 lg:gap-8">
+          <motion.div
+            initial={{
+              y: 100,
+            }}
+            transition={{ duration: 1.5 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="grid grid-cols-3 justify-center items-center gap-5 lg:gap-8"
+          >
             {skills.map((item) => (
               <Skill skill={item} key={item.name} />
             ))}
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
@@ -69,7 +78,7 @@ const Skills = () => {
 function Skill({ skill }) {
   return (
     <>
-      <div className="flex flex-col items-center justify-center h-[80px] lg:h-[110px] p-[10px] lg:p-[20px] gap-[5px] border dark:border-white rounded-lg shadow-md hover:-translate-y-1 hover:shadow-lg duration-500">
+      <div className="flex flex-col items-center justify-center h-[80px] md:h-[110px] p-[10px] md:p-[20px] gap-[5px] border dark:border-white rounded-lg shadow-md hover:-translate-y-1 hover:shadow-lg duration-500">
         <div>
           <img
             src={`./images/${skill.logo}`}

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [currentTheme, setCurrentTheme] = useState(
@@ -16,11 +17,11 @@ const Navbar = () => {
 
   return (
     <nav
-      className="flex sticky top-0 z-50 backdrop-blur-md bg-white/60 dark:bg-[hsl(240,93%,3%)]/40 text-black dark:text-white justify-between items-center p-6 md:p-8"
+      className="flex sticky top-0 z-50 backdrop-blur-md bg-white/60 dark:bg-[hsl(240,93%,3%)]/40 text-black dark:text-white justify-between items-center px-8 py-6 lg:py-8"
     >
-      <a href="#">
-        <div>ML.</div>
-      </a>
+      <Link to="/">
+        <code className="font-bold text-xl">{"<Manuel/>"}</code>
+      </Link>
       <ul className="flex items-center gap-5 text-sm md:text-[16px]">
         <div className="bg-white/70 flex items-center justify-center p-1 cursor-pointer rounded-full" onClick={handleThemeToggle}>
           <img
