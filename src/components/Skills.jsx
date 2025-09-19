@@ -35,14 +35,14 @@ const Skills = () => {
       className="mt-16 dark:bg-[hsl(240,93%,3%)] animate-fadeIn"
     >
       <div className="flex lg:gap-[20px] lg:p-[30px] p-[20px]">
-        <div>
+        {/* <div>
           <h1
             className="hidden dark:text-white lg:block uppercase tracking-[0.8rem] font-semibold"
             style={{ writingMode: "vertical-rl" }}
           >
             Skills
           </h1>
-        </div>
+        </div> */}
 
         <div className="flex flex-col gap-[10px] space-y-4">
           <div className="space-y-2">
@@ -52,8 +52,8 @@ const Skills = () => {
             <h3 className="font-bold text-2xl dark:text-white uppercase hidden lg:block">
               ...Tools of My Craft
             </h3>
-            <div className="bg-blue-400 h-1 w-30 lg:hidden"></div>
-            <div className="bg-blue-400 h-1 w-70 hidden lg:block"></div>
+            <div className="bg-gradient-to-r from-blue-400 to-blue-700 h-1 w-30 lg:hidden"></div>
+            <div className="bg-gradient-to-r from-blue-400 to-blue-700 h-1 w-70 hidden lg:block"></div>
           </div>
 
           <motion.div
@@ -78,7 +78,7 @@ const Skills = () => {
 function Skill({ skill }) {
   return (
     <>
-      <div className="flex flex-col items-center justify-center h-[80px] md:h-[110px] p-[10px] md:p-[20px] gap-[5px] border dark:border-white rounded-lg shadow-md hover:-translate-y-1 hover:shadow-lg duration-500">
+      <div className="flex flex-col items-center justify-center h-[80px] md:h-[110px] p-[10px] md:p-[20px] gap-[5px] dark:border rounded-lg shadow-md hover:-translate-y-1 hover:shadow-lg duration-500">
         <div>
           <img
             src={`./images/${skill.logo}`}

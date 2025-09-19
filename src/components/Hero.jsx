@@ -17,7 +17,7 @@ const Hero = () => {
         <h1 className="text-3xl dark:text-white leading-relaxed md:text-4xl lg:text-5xl text-center md:text-left">
           Welcome To My <br />
           <ReactTyped
-            className="text-blue-400 text-4xl md:text-5xl lg:text-7xl tracking-tight font-medium"
+            className="bg-gradient-to-r from-blue-400 to-blue-700 bg-clip-text text-transparent text-4xl md:text-5xl lg:text-7xl tracking-tight font-medium"
             strings={["Digital Space"]}
             typeSpeed={40}
             backSpeed={50}
@@ -33,7 +33,7 @@ const Hero = () => {
           <a
             href="https://docs.google.com/document/d/1mXJRJsotpHXM_DY4s5_o-g3kDlOTns-hIDf0w51qlnU/edit?usp=sharing"
             target="_blank"
-            className="bg-blue-400 text-black px-6 py-3 text-center rounded-bl-3xl rounded-tr-3xl hover:bg-white hover:text-black hover:border duration-500 hover:duration-200"
+            className="bg-gradient-to-r from-blue-400 to-blue-700 text-white dark:text-black px-6 py-3 text-center rounded-bl-3xl rounded-tr-3xl hover:bg-white hover:text-black hover:border duration-500 hover:duration-200"
           >
             My Resume 📃
           </a>

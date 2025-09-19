@@ -14,7 +14,7 @@ function Projects() {
         console.error("Error fetching projects:", error);
       }
       console.log(data);
-      
+
       setProjects(data || []);
     };
     fetchProjects();
@@ -28,7 +28,7 @@ function Projects() {
               <h3 className="font-bold text-2xl dark:text-white uppercase">
                 ...Projects
               </h3>
-              <div className="bg-blue-400 h-1"></div>
+              <div className="bg-gradient-to-r from-blue-400 to-blue-700 h-1"></div>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 justify-center items-center gap-5 lg:gap-8">
               {projects?.map((project) => (
@@ -50,14 +50,14 @@ function Projects() {
               ))}
             </div>
           </div>
-          <div className="left-heading">
+          {/* <div className="left-heading">
             <h1
               className="hidden lg:block dark:text-white uppercase tracking-[0.8rem] font-semibold"
               style={{ writingMode: "vertical-lr" }}
             >
               Showcase
             </h1>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

@@ -3,6 +3,7 @@ import { projectsList } from "../data/projectsData";
 import ProjectDetailsCard from "../components/ProjectDetailsCard";
 import { useEffect, useState } from "react";
 import { supabase } from "../supabaseClient";
+import { BarLoader } from "react-spinners";
 
 const ProjectDetails = () => {
   const { id } = useParams();
@@ -16,18 +17,24 @@ const ProjectDetails = () => {
         .eq("id", id);
       if (error) {
         console.log(error);
-      }
-      
-      else {
+      } else {
         setProject(data);
       }
-      setLoading(false)
+      setLoading(false);
     };
 
     getProjectById();
   }, [id]);
 
-  if (loading) return <div className="text-center text-5xl">Loading...</div>;
+  if (loading)
+    return (
+      <div className="flex items-center justify-center h-screen mx-auto">
+        <BarLoader
+          loading={loading}
+          color="oklch(70.7% 0.165 254.624)"
+        />
+      </div>
+    );
   if (!project || project.length === 0) {
     return <div className="text-white">Project not found</div>;
   }

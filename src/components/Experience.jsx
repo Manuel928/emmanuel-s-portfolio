@@ -10,14 +10,14 @@ const Experience = () => {
               <h3 className="font-bold text-2xl dark:text-white uppercase">
                 ...Experience
               </h3>
-              <div className="bg-blue-400 h-1"></div>
+              <div className="bg-gradient-to-r from-blue-400 to-blue-700 h-1"></div>
             </div>
 
             {/* Experience */}
             <div className="relative border-l-2 border-gray-300 dark:border-gray-600 ml-4">
               {/* Job 1 */}
               <div className="mb-10 ml-6">
-                <div className="absolute w-3 h-3 bg-blue-400 rounded-full -left-1.5 top-0"></div>
+                <div className="absolute w-3 h-3 bg-gradient-to-r from-blue-400 to-blue-700 rounded-full -left-1.5 top-0"></div>
                 <h4 className="text-lg font-semibold mb-2 dark:text-white">
                   Frontend Engineer
                 </h4>
@@ -45,7 +45,7 @@ const Experience = () => {
 
               {/* Job 2 */}
               <div className="mb-10 ml-6">
-                <div className="absolute w-3 h-3 bg-blue-400 rounded-full -left-1.5"></div>
+                <div className="absolute w-3 h-3 bg-gradient-to-r from-blue-400 to-blue-700 rounded-full -left-1.5"></div>
                 <h4 className="text-lg font-semibold mb-2 dark:text-white">
                   Frontend Engineer [Intern]
                 </h4>
@@ -73,7 +73,7 @@ const Experience = () => {
 
               {/* Job 3 */}
               <div className="mb-0 ml-6">
-                <div className="absolute w-3 h-3 bg-blue-400 rounded-full -left-1.5 "></div>
+                <div className="absolute w-3 h-3 bg-gradient-to-r from-blue-400 to-blue-700 rounded-full -left-1.5 "></div>
                 <h4 className="text-lg font-semibold mb-2 dark:text-white">
                   Frontend Engineer [Intern]
                 </h4>
@@ -100,14 +100,14 @@ const Experience = () => {
               </div>
             </div>
           </div>
-          <div className="left-heading">
+          {/* <div className="left-heading">
             <h1
               className="hidden lg:block dark:text-white uppercase tracking-[0.8rem] font-semibold"
               style={{ writingMode: "vertical-lr" }}
             >
               Showcase
             </h1>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

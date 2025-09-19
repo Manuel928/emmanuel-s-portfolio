@@ -8,7 +8,7 @@ const ProjectCard = ({ id, image, name, description, children }) => {
       // transition={{ duration: 1.5 }}
       // whileInView={{ opacity: 1, y: 0 }}
       // viewport={{ once: true }}
-      className="flex flex-col cursor-pointer h-full justify-center text-center gap-4 pb-6 bg-white rounded-xl dark:bg-blue-100 border border-blue-200 dark:border-[hsl(240,93%,3%)] shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-500"
+      className="flex flex-col cursor-pointer h-full justify-center text-center gap-4 pb-6 bg-white rounded-xl dark:bg-blue-100 shadow-2xl hover:shadow-xl hover:-translate-y-1 transition-all duration-500"
     >
       <img
         onClick={() => navigate(`/project/${id}`)}
