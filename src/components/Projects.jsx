@@ -39,7 +39,6 @@ function Projects() {
                   link={project.link}
                   description={project.description}
                   key={project.id}
-                  children={project.techStack}
                 >
                   <div className="flex gap-5 px-3 text-xs py-2 mx-0.5 bg-[hsl(240,93%,3%)] text-white w-fit ">
                     {project.techStack.map((stack) => (

@@ -11,7 +11,7 @@ const AnyQuestions = () => {
           <p className="text-sm">Feel free to reach out to me</p>
           <a
             href="#contact"
-            className="text-sm dark:bg-[hsl(240,93%,3%)] bg-black text-white px-4 py-3 hover:border duration-500 rounded-bl-3xl rounded-tr-3xl"
+            className="text-sm bg-black dark:bg-gradient-to-r from-blue-400 to-blue-700 text-white px-4 py-3 hover:border duration-500 rounded-bl-3xl rounded-tr-3xl"
           >
             Fill the form below 👇
           </a>

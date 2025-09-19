@@ -32,7 +32,7 @@ const Navbar = () => {
       </Link>
       <ul className="flex items-center gap-5 text-sm md:text-[16px]">
         <div
-          className="bg-white/70 flex items-center justify-center p-1 cursor-pointer rounded-full"
+          className="bg-white flex items-center justify-center p-1 cursor-pointer rounded-full"
           onClick={handleThemeToggle}
         >
           <img
@@ -41,7 +41,7 @@ const Navbar = () => {
             alt="Enable Dark Mode"
           />
           <img
-            src="../images/lightmode.svg"
+            src="../images/light-mode.png"
             className="w-4 h-4 lg:w-5 lg:h-5 hidden dark:block"
             alt="Enable Light Mode"
           />

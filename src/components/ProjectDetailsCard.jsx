@@ -8,7 +8,7 @@ const ProjectDetailsCard = ({ image, name, link, description, children }) => {
   const navigate = useNavigate();
   return (
     <>
-      <button onClick={() => navigate(-1)} className="mx-1 mb-5 flex gap-1">
+      <button onClick={() => navigate(-1)} className="mx-1 mb-5 dark:text-white/70 flex gap-1">
         <Undo2Icon />
         Go back
       </button>
@@ -47,7 +47,7 @@ const ProjectDetailsCard = ({ image, name, link, description, children }) => {
             href={link}
             target="_blank"
             type="submit"
-            className="py-3 px-7 dark:bg-gradient-to-r from-blue-400 to-blue-700 text-sm font-medium text-center text-white rounded-lg bg-black rounded-bl-3xl rounded-tr-3xl cursor-pointer hover:bg-white hover:text-black hover:border duration-500 focus:ring-4 focus:outline-none"
+            className="py-3 px-7 dark:bg-gradient-to-r from-blue-400 to-blue-700 text-sm font-medium text-center text-white rounded-lg bg-black rounded-bl-3xl rounded-tr-3xl cursor-pointer hover:bg-white hover:text-black duration-500 focus:ring-4 focus:outline-none"
           >
             Live link
           </a>
@@ -56,7 +56,18 @@ const ProjectDetailsCard = ({ image, name, link, description, children }) => {
 
       <div className="my-20 dark:text-white">
         <h3 className="underline text-lg text-center font-bold">Problem Statement:</h3>
-        <p className="mt-5 lg:text-justify">
+        <p className="mt-5 text-justify">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut velit
+          harum debitis enim cumque ratione quibusdam incidunt excepturi,
+          corrupti numquam perferendis qui facilis sunt delectus fugit
+          voluptatem magnam id mollitia nam quam alias veniam soluta? Labore
+          nesciunt asperiores, expedita repellat, quas veritatis est dolorem
+          molestias blanditiis delectus qui sunt aut?
+        </p>
+      </div>
+      <div className="my-20 dark:text-white">
+        <h3 className="underline text-lg text-center font-bold">Resolution:</h3>
+        <p className="mt-5 text-justify">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut velit
           harum debitis enim cumque ratione quibusdam incidunt excepturi,
           corrupti numquam perferendis qui facilis sunt delectus fugit

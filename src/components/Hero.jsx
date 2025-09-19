@@ -18,9 +18,9 @@ const Hero = () => {
           Welcome To My <br />
           <ReactTyped
             className="bg-gradient-to-r from-blue-400 to-blue-700 bg-clip-text text-transparent text-4xl md:text-5xl lg:text-7xl tracking-tight font-medium"
-            strings={["Digital Space"]}
-            typeSpeed={40}
-            backSpeed={50}
+            strings={["Digital Space", 'World']}
+            typeSpeed={60}
+            backSpeed={60}
             attr=""
             loop
           ></ReactTyped>
@@ -33,14 +33,15 @@ const Hero = () => {
           <a
             href="https://docs.google.com/document/d/1mXJRJsotpHXM_DY4s5_o-g3kDlOTns-hIDf0w51qlnU/edit?usp=sharing"
             target="_blank"
-            className="bg-gradient-to-r from-blue-400 to-blue-700 text-white dark:text-black px-6 py-3 text-center rounded-bl-3xl rounded-tr-3xl hover:bg-white hover:text-black hover:border duration-500 hover:duration-200"
+            className="bg-gradient-to-r from-blue-400 to-blue-700 text-white px-6 py-3 text-center rounded-bl-3xl rounded-tr-3xl hover:bg-white hover:text-black hover:border duration-500 hover:duration-200"
           >
             My Resume 📃
           </a>
         </div>
-        <div className="flex items-center dark:text-white lg:text-xl space-x-3 mt-4">
+        <div className="flex flex-col space-y-4 items-center lg:items-start dark:text-white mt-4">
           <h3 className="text-sm lg:text-md">Follow Me</h3>
-          <a href="">
+          <div className="flex space-x-9">
+            <a href="">
             <i className="fa-brands fa-facebook"></i>
           </a>
           <a href="https://www.instagram.com/devyn_studios/">
@@ -52,6 +53,10 @@ const Hero = () => {
           <a href="https://x.com/nuel_flow">
             <i className="fa-brands fa-x-twitter"></i>
           </a>
+          <a href="hhtps://www.linkedin.com/in/emmanuel-alao-6178a615a">
+            <i className="fa fa-linkedin"></i>
+          </a>
+          </div>
         </div>
       </div>
       {/* <!-- <img className="rounded-full w-72 border-3 bg-gradient-to-r from-purple-400 to-purple-700 md:w-[700px]" src="./images/emmanuel.jpg" alt="" srcset=""> --> */}
